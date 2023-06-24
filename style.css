@@ -1,0 +1,274 @@
+html {
+    background-color: #F2E5C4;
+    font-size: 16pt;
+}
+
+h1 {
+    text-align: left;
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 28pt;
+    height: 100px;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 20pt;
+    color: black;
+    padding: 0 6rem 0 6rem;
+}
+
+.container {
+    background: white;
+    padding: 1.5em 3em;
+    position: relative;
+    margin: 2em auto;
+    max-width: 800px;
+}
+
+.title {
+    background: #73AEFF;
+    color: white;
+    position: absolute;
+    top: -0.7em;
+    left: 40px;
+    padding: 0.25em 0.75em;
+    border-radius: 1em;
+    text-transform: uppercase;
+    font-size: 18pt;
+    font-family: 'Ysabeau', sans-serif;
+}
+
+.navigation {
+    padding-bottom: 35px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1em;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.header .navigation ul {
+    display: flex;
+    gap: 3em;
+    text-transform: uppercase;
+}
+
+.header .navigation ul li {
+    font-size: 16pt;
+    display: block;
+    margin: auto;
+    font-family: 'Ysabeau', sans-serif;
+    font-weight: 600;
+    
+}
+
+.header .active {
+    background-color: #73AEFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 1.5em;
+}
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    /* Цвет при наведении */
+    opacity: 50%;
+  }
+  
+a:visited {
+    /* Цвет посещённой ссылки */
+    color: black;
+  }
+.active a:visited {
+    color: white;
+}
+  
+a:active {
+    /* Цвет ссылки при клике */
+    color: black;
+  }
+/*
+.gallery-container {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.image-gallery {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-gallery img {
+    flex: 1;
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+*/
+ .caption {
+    font-size: 0.7em;
+    font-family: 'Ysabeau', sans-serif;
+    color: rgba(0, 0, 0, 0.5);
+}
+/*
+.image-block {
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.image-block ul li img {
+    margin: 0;
+    vertical-align: top;
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+.gallery ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.gallery ul li {
+    position: relative;
+}
+
+#gallery03 ul li {
+    border-radius: 0rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+*/
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+#wrapper {
+    -webkit-overflow-scrolling: touch;
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    padding: 0 6rem 0 6rem;
+}
+
+#main {
+    --alignment: center;
+    --flex-alignment: center;
+    --indent-left: 1;
+    --indent-right: 1;
+    --border-radius-tl: 0;
+    --border-radius-tr: 0;
+    --border-radius-br: 0;
+    --border-radius-bl: 0;
+    align-items: flex-start;
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+    justify-content: center;
+    max-width: 100%;
+    position: relative;
+    text-align: var(--alignment);
+    z-index: 1;
+}
+#main > .inner {
+    --padding-horizontal: 3rem;
+    --padding-vertical: 0rem;
+    --spacing: 0rem;
+    --width: 70rem;
+    border-radius: var(--border-radius-tl) var(--border-radius-tr) var(--border-radius-br) var(--border-radius-bl);
+    max-width: 100%;
+    position: relative;
+    width: var(--width);
+    z-index: 1;
+    padding: var(--padding-vertical) var(--padding-horizontal);
+}
+#gallery03 .inner {
+    max-width: 100%;
+    width: 100%;
+}
+
+.gallery ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: var(--flex-alignment);
+}
+ol, ul {
+    list-style: none;
+}
+#gallery03 ul li {
+    border-radius: 0rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+.gallery ul li {
+    position: relative;
+    width: 1200px;
+    height: 350px;
+    overflow: hidden;
+    justify-content: center; 
+}
+
+.icons  {
+    justify-content: center;
+    font-family: 'Ysabeau', sans-serif;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    margin-right: 2rem;
+}
+
+li {
+    margin: 1rem;
+}
+
+.logo {
+    position: relative;
+}
+
+.logo img {
+    width:  24px;
+}
+
+.logo:hover {
+    opacity: 50%;
+}
+
+.footer-text {
+    font-size: 0.7em;
+    font-family: 'Ysabeau', sans-serif;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.working-sample {
+    list-style: square;
+}
+
+.italic {
+    font-style: italic;
+}
